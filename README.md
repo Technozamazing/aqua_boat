@@ -164,7 +164,10 @@ You can find the code in the file boat_control.ino. Below are the key functions 
     : Moves the boat forward.
   </li>
   <li>
-    moveBackward(): Moves the boat backward.
+    <strong>
+      <code>moveBackward():</code>
+    </strong>
+     Moves the boat backward.
   </li>
   <li>
     turnLeft(): Turns the boat left by adjusting the servo motor.
