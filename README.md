@@ -156,27 +156,36 @@ You can find the code in the file boat_control.ino. Below are the key functions 
 
 <ul>
   <li>
-    <strong>measureDistance()</strong>
+    <strong><code>measureDistance()</code></strong>
     : Measures the distance using ultrasonic sensors.
   </li>
   <li>
-    <b>moveForward()</b>
+    <b><code>moveForward()</code></b>
     : Moves the boat forward.
   </li>
   <li>
     <strong>
-      <code>moveBackward():</code>
+      <code>moveBackward()</code>
     </strong>
-     Moves the boat backward.
+     : Moves the boat backward.
   </li>
   <li>
-    turnLeft(): Turns the boat left by adjusting the servo motor.
+    <strong>
+      <code>turnLeft()</code>
+    </strong>
+    : Turns the boat left by adjusting the servo motor.
   </li>
   <li>
-    turnRight(): Turns the boat right by adjusting the servo motor.
+    <strong>
+      <code>turnRight()</code>
+    </strong>
+    : Turns the boat right by adjusting the servo motor.
   </li>
   <li>
-    stopBoat(): Stops the boat's movement.
+    <strong>
+      <code>stopBoat()code>
+    </strong>
+    : Stops the boat's movement.
   </li>
 </ul>
 <br>
