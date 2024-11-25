@@ -84,61 +84,106 @@
 <h2>Code Explanation</h2>
 The program uses the following logic for navigation:
 
-A. No Obstacles
+<h3>A. No Obstacles</h3>
 If no obstacles are detected within a safe distance (30 cm):
-The boat moves forward.
+<ul><li>The boat moves forward.</li></ul><br>
 
-B. One-Sided Obstacle
-Front Obstacle: Turns left or right based on the availability of space.
-Left Obstacle: Moves forward or right.
-Right Obstacle: Moves forward or left.
+<h3>B. One-Sided Obstacle</h3>
+<ol>
+  <li>
+    Front Obstacle: Turns left or right based on the availability of space.
+  </li>
+  <li>
+    Left Obstacle: Moves forward or right.
+  </li>
+  <li>
+    Right Obstacle: Moves forward or left.
+  </li>
+</ol><br>
 
-C. Two-Sided Obstacles
-Front and Left Obstacle: Turns right.
-Front and Right Obstacle: Turns left.
-Left and Right Obstacle: Moves forward.
 
-D. All-Sided Obstacles
+<h3>C. Two-Sided Obstacles</h3>
+<ol>
+  <li>
+    Front and Left Obstacle: Turns right.
+  </li>
+  <li>
+    Front and Right Obstacle: Turns left.
+  </li>
+  <li>
+    Left and Right Obstacle: Moves forward.
+  </li>
+</ol>
+
+
+
+<h3>D. All-Sided Obstacles</h3>
 If obstacles are detected in all three directions:
-The boat stops.
+<ul><li>The boat stops.</li></ul><br>
 
 
 
-How to Use
-Assemble the Circuit:
-Follow the circuit diagram to connect the components.
-Upload the Code:
-Open the .ino file in the Arduino IDE.
-Select the correct board (Arduino Nano) and COM port.
-Upload the code to the Arduino Nano.
-Power On:
-Power the Arduino and motor driver.
-Observe and Test:
-Place the boat in water and monitor its obstacle-avoiding behavior.
-Use the serial monitor for real-time distance readings.
+<h2>How to Use</h2>
+<ol>
+  <li>Assemble the Circuit:</li>
+  <ul><li>Follow the circuit diagram to connect the components.</li></ul>
+  <br>
+  <li>Upload the Code:</li>
+  <ul>
+    <li>Open the .ino file in the Arduino IDE.</li>
+    <li>Select the correct board (Arduino Nano) and COM port.</li>
+    <li>Upload the code to the Arduino Nano.</li>
+  </ul><br>
+  <li>Power On:</li>
+  <ul><li>Power the Arduino and motor driver.</li></ul>
+  <br>
+
+  <li>Observe and Test:</li>
+  <ul>
+    <li>
+      Place the boat in water and monitor its obstacle-avoiding behavior.
+    </li>
+    <li>
+      Use the serial monitor for real-time distance readings.
+    </li>
+  </ul>
+</ol>
+<br>
 
 
+<h2>Code</h2>
 You can find the code in the file boat_control.ino. Below are the key functions used:
 
-measureDistance(): Measures the distance using ultrasonic sensors.
-moveForward(): Moves the boat forward.
-moveBackward(): Moves the boat backward.
-turnLeft(): Turns the boat left by adjusting the servo motor.
-turnRight(): Turns the boat right by adjusting the servo motor.
-stopBoat(): Stops the boat's movement.
+<ul>
+  <li>measureDistance(): Measures the distance using ultrasonic sensors.</li>
+  <li>moveForward(): Moves the boat forward.</li>
+  <li>moveBackward(): Moves the boat backward.</li>
+  <li>turnLeft(): Turns the boat left by adjusting the servo motor.</li>
+  <li>turnRight(): Turns the boat right by adjusting the servo motor.</li>
+  <li>stopBoat(): Stops the boat's movement.</li>
+</ul>
+<br>
 
 
+<h2>Future Improvements</h2>
+<ul>
+  <li>
+    Enhanced Navigation Algorithms: Use advanced path-planning algorithms for smoother navigation.
+  </li>
+  <li>
+    Additional Sensors: Integrate water-quality sensors or GPS for enhanced functionality.
+  </li>
+  <li>
+    Speed Control: Add PWM control for the propulsion motor for smoother movement.
+  </li>
+</ul><br>
 
-Future Improvements
-Enhanced Navigation Algorithms: Use advanced path-planning algorithms for smoother navigation.
-Additional Sensors: Integrate water-quality sensors or GPS for enhanced functionality.
-Speed Control: Add PWM control for the propulsion motor for smoother movement.
 
-
-License
+<h3>License</h3>
 This project is open-source and licensed under the MIT License. You are free to use, modify, and distribute it as long as proper credit is given.
+<br>
 
-Feel free to modify or expand this file as per your project's needs!
+<h6>Feel free to modify or expand this file as per your project's needs!</h6>
 
 
 
