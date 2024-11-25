@@ -194,13 +194,22 @@ You can find the code in the file boat_control.ino. Below are the key functions 
 <h2>Future Improvements</h2>
 <ul>
   <li>
-    Enhanced Navigation Algorithms: Use advanced path-planning algorithms for smoother navigation.
+    <strong>
+      Enhanced Navigation Algorithms:
+    </strong>
+     Use advanced path-planning algorithms for smoother navigation.
   </li>
   <li>
-    Additional Sensors: Integrate water-quality sensors or GPS for enhanced functionality.
+    <strong>
+      Additional Sensors:
+    </strong>
+     Integrate water-quality sensors or GPS for enhanced functionality.
   </li>
   <li>
-    Speed Control: Add PWM control for the propulsion motor for smoother movement.
+    <strong>
+      Speed Control:
+    </strong>
+     Add PWM control for the propulsion motor for smoother movement.
   </li>
 </ul><br>
 
