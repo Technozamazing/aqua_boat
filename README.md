@@ -155,7 +155,10 @@ If obstacles are detected in all three directions:
 You can find the code in the file boat_control.ino. Below are the key functions used:
 
 <ul>
-  <li>measureDistance(): Measures the distance using ultrasonic sensors.</li>
+  <li>
+    <strong>measureDistance()</strong>
+    : Measures the distance using ultrasonic sensors.
+  </li>
   <li>moveForward(): Moves the boat forward.</li>
   <li>moveBackward(): Moves the boat backward.</li>
   <li>turnLeft(): Turns the boat left by adjusting the servo motor.</li>
