@@ -8,19 +8,34 @@
 <h2>Features</h2>
 <ul>
   <li>
-    Obstacle Detection: Uses three HC-SR04 ultrasonic sensors to detect obstacles in front, left, and right directions.
+    <strong>
+      Obstacle Detection:
+    </strong>
+     Uses three HC-SR04 ultrasonic sensors to detect obstacles in front, left, and right directions.
   </li>
   <li>
-    Autonomous Navigation: Avoids obstacles based on predefined conditions.
+    <strong>
+      Autonomous Navigation:
+    </strong>
+     Avoids obstacles based on predefined conditions.
   </li>
   <li>
-    Single Motor Propulsion: Controls the forward and backward movement of the boat.
+    <strong>
+      Single Motor Propulsion:
+    </strong>
+     Controls the forward and backward movement of the boat.
   </li>
   <li>
-    Directional Control: Uses a servo motor for turning left or right.
+    <strong>
+      Directional Control:
+    </strong>
+     Uses a servo motor for turning left or right.
   </li>
   <li>
-    Real-Time Distance Monitoring: Outputs sensor readings to the serial monitor for debugging.
+    <strong>
+      Real-Time Distance Monitoring:
+    </strong>
+     Outputs sensor readings to the serial monitor for debugging.
   </li>
 </ul>
 <br>
@@ -29,28 +44,49 @@
 <h2>Components Required</h2>
 <ul>
   <li>
-    Arduino Nano (or equivalent microcontroller)
+    <strong>
+      Arduino Nano
+    </strong>
+     (or equivalent microcontroller)
   </li>
   <li>
-    HC-SR04 Ultrasonic Sensors (3 units)
+    <strong>
+      HC-SR04 Ultrasonic Sensors
+    </strong>
+     (3 units)
   </li>
   <li>
-    DC Motor (for propulsion)
+    <strong>
+      DC Motor
+    </strong>
+     (for propulsion)
   </li>
   <li>
-    Motor Driver Module (e.g., L298N or similar)
+    <strong>
+      Motor Driver Module
+    </strong>
+     (e.g., L298N or similar)
   </li>
   <li>
-    Servo Motor (for directional control)
+    <strong>
+      Servo Motor
+    </strong>
+     (for directional control)
   </li>
   <li>
-    Battery Pack (suitable for powering the Arduino and motors)
+    <strong>
+      Battery Pack
+    </strong>
+     (suitable for powering the Arduino and motors)
   </li>
   <li>
-    Connecting Wires
+    <strong> Connecting Wires</strong>
   </li>
   <li>
-    Boat Frame (aqua boat chassis)
+    <strong>
+      Boat Frame
+    </strong>
+     (aqua boat chassis)
   </li>
 </ul>
 <br>
@@ -63,19 +99,19 @@
   </li>
   <ul>
     <li>
-      Front Sensor: Trig to pin 2, Echo to pin 3
+      Front Sensor: Trig to pin <code>2</code>, Echo to pin <code>3</code>
     </li>
     <li>
-      Left Sensor: Trig to pin 4, Echo to pin 5
+      Left Sensor: Trig to pin <code>4</code>, Echo to pin <code>5</code>
     </li>
     <li>
-      Right Sensor: Trig to pin 6, Echo to pin 7
+      Right Sensor: Trig to pin <code>6</code>, Echo to pin <code>7</code>
     </li>
   </ul><br>
   <li>Motor Driver:</li>
-  <ul><li>Motor control pins: 8 and 9</li></ul><br>
+  <ul><li>Motor control pins: <code>8</code> and <code>9</code></li></ul><br>
   <li>Servo Motor:</li>
-  <ul><li>Control pin: 10</li></ul>  <br>
+  <ul><li>Control pin: <code>10</code></li></ul>  <br>
   <li>Power the components with an appropriate battery (e.g., 5V and 12V Li-ion).</li>
 </ol>
 <br>
@@ -84,40 +120,54 @@
 <h2>Code Explanation</h2>
 The program uses the following logic for navigation:
 
-<h3>A. No Obstacles</h3>
+<h4>A. No Obstacles</h4>
 If no obstacles are detected within a safe distance (30 cm):
 <ul><li>The boat moves forward.</li></ul><br>
 
-<h3>B. One-Sided Obstacle</h3>
+<h4>B. One-Sided Obstacle</h4>
 <ol>
   <li>
-    Front Obstacle: Turns left or right based on the availability of space.
+    <strong>
+      Front Obstacle:
+    </strong>
+     Turns left or right based on the availability of space.
   </li>
   <li>
-    Left Obstacle: Moves forward or right.
+    <strong>
+      Left Obstacle:
+    </strong>
+     Moves forward or right.
   </li>
   <li>
-    Right Obstacle: Moves forward or left.
+    <strong>
+      Right Obstacle:
+    </strong>
+     Moves forward or left.
   </li>
 </ol><br>
 
 
-<h3>C. Two-Sided Obstacles</h3>
+<h4>C. Two-Sided Obstacles</h4>
 <ol>
   <li>
-    Front and Left Obstacle: Turns right.
+    <strong>Front and Left Obstacle:</strong>
+     Turns <b>right.</b>
   </li>
   <li>
-    Front and Right Obstacle: Turns left.
+    <strong>
+    Front and Right Obstacle:
+    </strong>Turns <b>left.</b>
   </li>
   <li>
-    Left and Right Obstacle: Moves forward.
+    <strong>
+    Left and Right Obstacle:
+    </strong>Moves <b>forward.</b>
   </li>
 </ol>
 
 
 
-<h3>D. All-Sided Obstacles</h3>
+<h4>D. All-Sided Obstacles</h4>
 If obstacles are detected in all three directions:
 <ul><li>The boat stops.</li></ul><br>
 
@@ -125,20 +175,20 @@ If obstacles are detected in all three directions:
 
 <h2>How to Use</h2>
 <ol>
-  <li>Assemble the Circuit:</li>
+  <li><strong>Assemble the Circuit:</strong></li>
   <ul><li>Follow the circuit diagram to connect the components.</li></ul>
   <br>
-  <li>Upload the Code:</li>
+  <li><strong>Upload the Code:</strong></li>
   <ul>
-    <li>Open the .ino file in the Arduino IDE.</li>
-    <li>Select the correct board (Arduino Nano) and COM port.</li>
+    <li>Open the <code>.ino </code>file in the Arduino IDE.</li>
+    <li>Select the correct board <code>(Arduino Nano)</code> and COM port.</li>
     <li>Upload the code to the Arduino Nano.</li>
   </ul><br>
-  <li>Power On:</li>
+  <li><strong>Power On:</strong></li>
   <ul><li>Power the Arduino and motor driver.</li></ul>
   <br>
 
-  <li>Observe and Test:</li>
+  <li><strong>Observe and Test:</strong></li>
   <ul>
     <li>
       Place the boat in water and monitor its obstacle-avoiding behavior.
