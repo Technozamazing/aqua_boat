@@ -1,7 +1,7 @@
 <h1>Obstacle-Avoiding Aqua Boat</h1>
 
 This project implements an Arduino-based obstacle-avoiding aqua boat. The boat is equipped with ultrasonic sensors for obstacle detection, a single motor for propulsion, and a servo motor for directional control. The system intelligently navigates around obstacles while maintaining its course.
-
+<br>
 
 <h2>Features</h2>
 <ul>
@@ -21,6 +21,7 @@ This project implements an Arduino-based obstacle-avoiding aqua boat. The boat i
     Real-Time Distance Monitoring: Outputs sensor readings to the serial monitor for debugging.
   </li>
 </ul>
+<br>
 
 
 <h2>Components Required</h2>
@@ -50,21 +51,35 @@ This project implements an Arduino-based obstacle-avoiding aqua boat. The boat i
     Boat Frame (aqua boat chassis)
   </li>
 </ul>
+<br>
 
 
-Circuit Diagram
-Ultrasonic Sensors:
-Front Sensor: Trig to pin 2, Echo to pin 3
-Left Sensor: Trig to pin 4, Echo to pin 5
-Right Sensor: Trig to pin 6, Echo to pin 7
-Motor Driver:
-Motor control pins: 8 and 9
-Servo Motor:
-Control pin: 10
-Power the components with an appropriate battery (e.g., 7.4V Li-ion).
+<h2>Circuit Diagram</h2>
+<ol>
+  <li>
+    Ultrasonic Sensors:
+  </li>
+  <ul>
+    <li>
+      Front Sensor: Trig to pin 2, Echo to pin 3
+    </li>
+    <li>
+      Left Sensor: Trig to pin 4, Echo to pin 5
+    </li>
+    <li>
+      Right Sensor: Trig to pin 6, Echo to pin 7
+    </li>
+  </ul>
+  <li>Motor Driver:</li>
+  <ul><li>Motor control pins: 8 and 9</li></ul>
+  <li>Servo Motor:</li>
+  <ul><li>Control pin: 10</li></ul>  
+  <li>Power the components with an appropriate battery (e.g., 5V and 12V Li-ion).</li>
+</ol>
+<br>
 
 
-Code Explanation
+<h2>Code Explanation</h2>
 The program uses the following logic for navigation:
 
 A. No Obstacles
