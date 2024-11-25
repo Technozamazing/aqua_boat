@@ -1,4 +1,4 @@
-<h1>Obstacle-Avoiding Aqua Boat</h1>
+<h1>Obstacle Avoiding Aqua Boat</h1>
 <p>
   This project implements an Arduino-based obstacle-avoiding aqua boat. The boat is equipped with ultrasonic sensors for obstacle detection, a single motor for propulsion, and a servo motor for directional control. The system intelligently navigates around obstacles while maintaining its course.
 </p>
@@ -163,7 +163,7 @@ If no obstacles are detected within a safe distance (30 cm):
     Left and Right Obstacle:
     </strong>Moves <b>forward.</b>
   </li>
-</ol>
+</ol><br>
 
 
 
@@ -180,7 +180,7 @@ If obstacles are detected in all three directions:
   <br>
   <li><strong>Upload the Code:</strong></li>
   <ul>
-    <li>Open the <code>.ino </code>file in the Arduino IDE.</li>
+    <li>Open the <code>.ino</code> file in the Arduino IDE.</li>
     <li>Select the correct board <code>(Arduino Nano)</code> and COM port.</li>
     <li>Upload the code to the Arduino Nano.</li>
   </ul><br>
@@ -202,7 +202,8 @@ If obstacles are detected in all three directions:
 
 
 <h2>Code</h2>
-You can find the code in the file boat_control.ino. Below are the key functions used:
+You can find the code in the file <a href="https://github.com/Technozamazing/aqua_boat/tree/main">aqua_boat</a>. 
+Below are the key functions used:
 
 <ul>
   <li>
@@ -265,7 +266,7 @@ You can find the code in the file boat_control.ino. Below are the key functions 
 
 
 <h3>License</h3>
-This project is open-source and licensed under the MIT License. You are free to use, modify, and distribute it as long as proper credit is given.
+This project is open-source and licensed under the MIT License. You are free to use, modify, and distribute it <code>as long as proper credit is given</code>.
 <br>
 
 <h6>Feel free to modify or expand this file as per your project's needs!</h6>
