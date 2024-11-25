@@ -183,7 +183,7 @@ You can find the code in the file boat_control.ino. Below are the key functions 
   </li>
   <li>
     <strong>
-      <code>stopBoat()code>
+      <code>stopBoat()</code>
     </strong>
     : Stops the boat's movement.
   </li>
