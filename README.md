@@ -2,8 +2,9 @@
 
 This project implements an Arduino-based obstacle-avoiding aqua boat. The boat is equipped with ultrasonic sensors for obstacle detection, a single motor for propulsion, and a servo motor for directional control. The system intelligently navigates around obstacles while maintaining its course.
 <hr>
-
-Features
+<br>
+<br>
+<h2>Features</h2>
 Obstacle Detection: Uses three HC-SR04 ultrasonic sensors to detect obstacles in front, left, and right directions.
 Autonomous Navigation: Avoids obstacles based on predefined conditions.
 Single Motor Propulsion: Controls the forward and backward movement of the boat.
