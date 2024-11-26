@@ -1,10 +1,11 @@
 Conditions for Boat Operations:
+====================================================
 
-A. NO OBSTACLES
+A. NO OBSTACLES:
 
    a. When NO OBSTACLES
    {
-    move FRONT;
+       move FRONT;
    }
 
 
@@ -31,8 +32,8 @@ B. ONE SIDED OBSTACLE:
 ====================================================
 
 C. TWO SIDED OBSTACLES:
-FRONT AND LEF
-    a. When TWO,  T OBSTACLES
+
+    a. When TWO,  FRONT AND LEFT OBSTACLES
     {
         move RIGHT;
     }
