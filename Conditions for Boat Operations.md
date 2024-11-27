@@ -8,7 +8,7 @@ A. NO OBSTACLES:
        move FRONT;
     }
 
-
+<br>
 
  
 B. ONE SIDED OBSTACLE:
@@ -32,6 +32,7 @@ B. ONE SIDED OBSTACLE:
         either move FRONT or LEFT
     }
 
+<br>
 
 
 
@@ -56,6 +57,7 @@ C. TWO SIDED OBSTACLES:
         move FRONT;
     }
 
+<br>
 
 
 
