@@ -1,5 +1,5 @@
 Conditions for Boat Operations:
-====================================================
+ 
 
 A. NO OBSTACLES:
 
@@ -9,8 +9,8 @@ A. NO OBSTACLES:
     }
 
 
-====================================================
 
+ 
 B. ONE SIDED OBSTACLE:
 
     a. When ONE FRONT OBSTACLE
@@ -33,7 +33,7 @@ B. ONE SIDED OBSTACLE:
     }
 
 
-====================================================
+
 
 C. TWO SIDED OBSTACLES:
 
@@ -57,7 +57,7 @@ C. TWO SIDED OBSTACLES:
     }
 
 
-====================================================
+
 
 D. All THREE SIDED OBSTACLES:
 
