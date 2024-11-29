@@ -22,7 +22,6 @@
 Servo radarServo;  // Servo motor for turning    //variable
 
 
-
 // Function to measure distance from the ultrasonic sensor
 long measureDistance(int trigPin, int echoPin) 
 {
